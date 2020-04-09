@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env groovy
 //Unzip a tar file
-def unZipTarFile(String path, String fileName, String tarExt) {
+def call(String path, String fileName, String tarExt) {
   dir (path) {
     echo "file decompression ${fileName}"
     bat 'dir'
